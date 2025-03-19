@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Apology
+{% endblock %}
+
+{% block main %}
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Resultado de la busqueda</title>
+    </head>
+    <body>
+        <h1>Precio de la Acción</h1>
+        <p>Símbolo: {{ symbol }}</p>
+        <p>Precio: {{ price }}</p>
+        <a href="/quote">Buscar otra acción</a>
+    </body>
+</html>
+
+
+
+
+{% endblock %}

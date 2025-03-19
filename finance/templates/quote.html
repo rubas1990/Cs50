@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Apology
+{% endblock %}
+
+{% block main %}
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Buscar Acción</title>
+</head>
+<body>
+    <h1>Buscar PRecio de Acción</h1>
+    <form action="/quote" method="post">
+    <label for="symbol">Símbolo de la acción</lavel>
+    <input type="text" name="symbol" required>
+    <br>
+    <button type="submit">Buscar</button>
+    </form>
+</body>
+</html>
+
+{% endblock %}

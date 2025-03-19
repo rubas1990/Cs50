@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Apology
+{% endblock %}
+
+{% block main %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar Acciones</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-4">Comprar Acciones</h1>
+        <form action="/buy" method="post">
+            <div class="form-group">
+                <label for="symbol">Símbolo de la acción:</label>
+                <input type="text" class="form-control" id="symbol" name="symbol" placeholder="Ejemplo: AAPL" required>
+            </div>
+            <div class="form-group">
+                <label for="shares">Número de acciones:</label>
+                <input type="number" class="form-control" id="shares" name="shares" min="1" placeholder="Número de acciones" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Comprar</button>
+        </form>
+        <a href="/" class="btn btn-link mt-3">Volver a la página principal</a>
+    </div>
+</body>
+</html>
+{% endblock %}

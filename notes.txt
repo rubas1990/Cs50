@@ -1,0 +1,21 @@
+Para hacer una carpeta es mkdir y el nombre de la carpeta
+para limpiar la pantalla en la terminal es celar
+para hacer un programa nuevo es code y el nombre del programa
+para correr un programa es make y el nombre del programa
+despues ./y el nombre del programa
+
+
+para correr un programa automaticamente se usa clang -o y el nombre del programa y luego nombre del programa.c y un nuevo argumento -lcs50
+despues ./ y el nombre del programa
+
+para debugg es pone debug50 ./ y el nombre del archivo para ello tienes que poner un punto rojo en un renglon
+
+
+cowsay moo
+
+
+cowsay -f duck quak
+
+cowsay -f dragon graw
+
+

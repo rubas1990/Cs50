@@ -1,0 +1,41 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Apology
+{% endblock %}
+
+{% block main %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Portafolio</title>
+    
+</head>
+<body>
+    <h1>Tu Portafolio</h1>
+    <table>
+        <tr>
+            <th>Símbolo</th>
+            <th>Acciones</th>
+            <th>Precio</th>
+            <th>Valor Total</th>
+        </tr>
+        {% for stock in portfolio %}
+        <tr>
+            <td>{{ stock.symbol }}</td>
+            <td>{{ stock.shares }}</td>
+            <td>{{ stock.price | usd }}</td>
+            <td>{{ stock.total_value | usd }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <h2>Saldo de Efectivo: {{ cash | usd }}</h2>
+    <h2>Total General: {{ grand_total | usd }}</h2>
+</body>
+</html>
+
+{% endblock %}
+
